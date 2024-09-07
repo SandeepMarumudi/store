@@ -8,10 +8,10 @@ const Categories=()=>{
 
     return(
         <>
-      <NavLink to="jewelery">Jewelery</NavLink>
-      <NavLink to="electronics">Electronics</NavLink>
-      <NavLink to="men's">Men's clothing</NavLink>
-      <NavLink to="women's">Women's clothing</NavLink>
+      <NavLink to="jewelery"><button>Jewelery</button></NavLink>
+      <NavLink to="electronics"><button>Electronics</button></NavLink>
+      <NavLink to="men's"><button>Men's clothing</button></NavLink>
+      <NavLink to="women's"><button>Women's clothing</button></NavLink>
       <Outlet/>
         
         </>

@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
 
 import Card1 from "../components/card";
+import { Searchinput } from "../components/Navbar";
 
 const Allproducts = () => {
   const [products, setproducts] = useState([]);
+  
 
   useEffect(() => {
     fetchdata();

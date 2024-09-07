@@ -5,11 +5,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, NavLink } from "react-router-dom"
 import "./navbar.css"
+import { createContext, useState } from 'react';
 
-
+export const Searchinput=createContext()
 const Navbar1=()=> {
+  
+
   return (
-    <>
+ 
+      <>
       <Navbar bg="primary" data-bs-theme="dark">
         <Container >
           <NavLink to={"/"} ><Navbar.Brand >Home</Navbar.Brand></NavLink>
@@ -20,10 +24,14 @@ const Navbar1=()=> {
             <NavLink to={"women's"}>women's clothing</NavLink>
             <NavLink to={"jewelery"}>Jewelery</NavLink>
             <NavLink to={"categories"}>Categories</NavLink>
+           
           </Nav>
         </Container>
       </Navbar>
     </>
+
+   
+    
   );
 }
 
